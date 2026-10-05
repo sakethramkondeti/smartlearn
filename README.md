@@ -2,54 +2,97 @@
 
 > **Intelligent, Adaptive & Personalized AI Learning Platform**
 
-Cognix is an advanced educational ecosystem that personalizes learning journeys through Bayesian Knowledge Tracing, dynamic concept dependency graphs, and a real-time Socratic AI tutor.
+Cognix is an advanced AI-powered educational platform designed to deliver personalized learning experiences through adaptive curriculum generation, interactive lectures, intelligent assessments, and real-time Socratic AI tutoring.
 
 ---
 
-## 📁 Repository Structure
+## 📁 Project Architecture
+
+Cognix is built as a modern, unified Next.js 15 full-stack application:
 
 ```
 cognix/
+├── app/                      # Next.js App Router
+│   ├── (app)/                # Protected / core dashboard routes
+│   │   ├── dashboard/        # Main learner dashboard & metrics
+│   │   ├── courses/          # Course catalog & curriculum viewer
+│   │   ├── learn/            # Adaptive learning & interactive lectures
+│   │   ├── assessments/      # Quizzes, tests & cognitive mastery tracking
+│   │   ├── knowledge/        # Knowledge graph & concept dependencies
+│   │   ├── resources/        # Learning library & materials
+│   │   └── settings/         # Profile & model configuration
+│   ├── api/                  # Backend REST endpoints & AI streaming
+│   │   ├── ai/               # AI generation (lectures, quizzes, explain)
+│   │   ├── courses/          # Course management APIs
+│   │   └── student/          # Student progress & analytics APIs
+│   ├── globals.css           # Design system tokens & Tailwind base
+│   └── layout.tsx            # Root layout & providers
 │
-├── PROJECT_SPEC.md       # Full architecture, data models, AI pipeline & API specs
-├── README.md             # Project overview, tech stack, and developer guide
+├── components/               # Modular UI Components
+│   ├── ai/                   # AI Tutor chat, lecture streamers, assistants
+│   ├── assessments/          # Quiz runners, scoring & analytics UI
+│   ├── courses/              # Course cards, syllabus explorer
+│   ├── layout/               # Global navigation, sidebar & header
+│   ├── learning/             # Active recall, spaced repetition UI
+│   └── ui/                   # Core atomic design components
 │
-├── frontend/             # Next.js / React interactive UI for learners & educators
-├── backend/              # Core REST & WebSocket services, Auth, and DB persistence
-├── ai/                   # Knowledge tracing models, RAG engine, and Socratic AI agent
-├── learning/             # Curriculums, concept dependency graphs, and question banks
-└── docs/                 # System architecture, API specs, and implementation roadmap
+├── lib/                      # Core Utilities & Services
+│   ├── ai/                   # Multi-LLM provider orchestration (NVIDIA / Gemini)
+│   │   ├── provider.ts       # Unified model router & fallback handler
+│   │   └── services/         # Dedicated AI domain services
+│   ├── db.ts                 # Prisma Client singleton
+│   └── utils.ts              # Styling & format helper functions
+│
+├── prisma/                   # Database Layer
+│   ├── schema.prisma         # Data models (Users, Courses, Lessons, Quizzes)
+│   └── seed.ts               # Database seeder with sample curricula
+│
+├── data/                     # Mock & fallback datasets for offline resilience
+├── types/                    # TypeScript interfaces & domain types
+└── docs/                     # System architecture & engineering docs
 ```
 
 ---
 
-## 🚀 Modules Overview
+## 🚀 Tech Stack
 
-| Directory | Purpose | Key Tech |
-| :--- | :--- | :--- |
-| [`frontend/`](./frontend/) | Interactive learner dashboard, visual mastery graphs, and tutor interface | React, Next.js / Vite, Tailwind CSS, Lucide Icons |
-| [`backend/`](./backend/) | Core API services, authentication, telemetry, and mastery sync | Node.js / FastAPI, PostgreSQL, Prisma / SQLAlchemy, Redis |
-| [`ai/`](./ai/) | Adaptive learning engine, BKT/DKT mastery estimation, Socratic tutor | Python, LangChain, OpenAI / Gemini API, pgvector / Chroma |
-| [`learning/`](./learning/) | Curated curricula, concept graphs, and Item Response Theory question banks | JSON / YAML ontologies, Markdown lesson assets |
-| [`docs/`](./docs/) | Technical documentation, architecture blueprints, API schemas | Markdown, Mermaid diagrams |
+- **Framework**: Next.js 15 (App Router, React 19, Server Components)
+- **Styling**: Tailwind CSS, Lucide Icons, Glassmorphism design system
+- **Database & ORM**: PostgreSQL (Supabase) with Prisma ORM
+- **AI Engines**:
+  - **NVIDIA NIM Nemotron 550B** (Complex reasoning & Socratic tutoring)
+  - **Google Gemini 2.5 Flash** (Curriculum generation & real-time lectures)
+- **Mathematical Rendering**: KaTeX with Remark Math & Rehype KaTeX
 
 ---
 
-## 🛠️ Quickstart
+## 🛠️ Getting Started
 
-### Prerequisites
-- Node.js >= 18.x
-- Python >= 3.10
-- PostgreSQL with `pgvector` extension
-- Redis (optional for local caching)
+### 1. Install Dependencies
+```bash
+npm install
+```
 
-### Getting Started
-1. **Explore Architecture & Specs**: Read [`PROJECT_SPEC.md`](./PROJECT_SPEC.md) for full system specifications.
-2. **Setup AI Service**: Check [`ai/README.md`](./ai/README.md) to initialize the knowledge tracing & tutor agent.
-3. **Setup Backend**: Check [`backend/README.md`](./backend/README.md) to run migrations and start the API server.
-4. **Setup Frontend**: Check [`frontend/README.md`](./frontend/README.md) to launch the web client.
+### 2. Configure Environment
+Copy `.env.local.example` to `.env.local` and add your API keys and database URL:
+```bash
+cp .env.local.example .env.local
+```
+
+### 3. Setup Database (Optional)
+```bash
+npx prisma db push
+npx prisma db seed
+```
+
+### 4. Run the Development Server
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser.
 
 ---
 
 ## 📄 License
-MIT License. See [LICENSE](./LICENSE) for details.
+MIT License.
