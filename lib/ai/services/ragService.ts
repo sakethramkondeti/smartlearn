@@ -436,7 +436,7 @@ export class RAGService {
             .join("\n\n")
         : params.extractedText.slice(0, 12000);
 
-    const systemPrompt = `You are Model 1: The SmartLearn Knowledge & Source Ingestion Engine.
+    const systemPrompt = `You are Model 1: The Cognix Knowledge & Source Ingestion Engine.
 Analyze the STRUCTURED source content below and distill it into precise learning concepts.
 
 HALLUCINATION GUARD — CRITICAL RULES:

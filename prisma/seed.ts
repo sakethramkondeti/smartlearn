@@ -9,7 +9,7 @@ import {
 const prisma = new PrismaClient();
 
 async function main() {
-  console.log("Seeding SmartLearn Database...");
+  console.log("Seeding Cognix Database...");
 
   // 1. Seed Default User
   const user = await prisma.user.upsert({

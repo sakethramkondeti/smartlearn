@@ -1,15 +1,15 @@
-# SmartLearn 🎓
+# Cognix 🎓
 
 > **Intelligent, Adaptive & Personalized AI Learning Platform**
 
-SmartLearn is an advanced educational ecosystem that personalizes learning journeys through Bayesian Knowledge Tracing, dynamic concept dependency graphs, and a real-time Socratic AI tutor.
+Cognix is an advanced educational ecosystem that personalizes learning journeys through Bayesian Knowledge Tracing, dynamic concept dependency graphs, and a real-time Socratic AI tutor.
 
 ---
 
 ## 📁 Repository Structure
 
 ```
-smartlearn/
+cognix/
 │
 ├── PROJECT_SPEC.md       # Full architecture, data models, AI pipeline & API specs
 ├── README.md             # Project overview, tech stack, and developer guide

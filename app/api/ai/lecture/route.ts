@@ -17,7 +17,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ markdown: "" });
     }
 
-    const systemPrompt = `You are SmartLearn AI — an expert academic tutor and professor.
+    const systemPrompt = `You are Cognix AI — an expert academic tutor and professor.
 Generate high-quality, comprehensive daily lecture notes for university students.
 
 Output format rules (STRICT):

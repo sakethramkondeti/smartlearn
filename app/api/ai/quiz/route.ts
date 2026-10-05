@@ -13,7 +13,7 @@ export async function POST(req: Request) {
   try {
     const { dayTitle, topics, courseTitle, dayNumber } = await req.json();
 
-    const systemPrompt = `You are SmartLearn AI Assessment Engine.
+    const systemPrompt = `You are Cognix AI Assessment Engine.
 Generate exactly 3 multiple choice diagnostic questions to verify a student's mastery of the day's topics.
 Questions must test true comprehension, formulas, and error diagnosis, not superficial facts.
 Output STRICTLY valid JSON matching:

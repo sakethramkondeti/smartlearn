@@ -1,6 +1,6 @@
-# Backend — SmartLearn Core API
+# Backend — Cognix Core API
 
-The backend service for **SmartLearn**, handling user authentication, course management, telemetry streaming, mastery synchronization, and database persistence.
+The backend service for **Cognix**, handling user authentication, course management, telemetry streaming, mastery synchronization, and database persistence.
 
 ## Architecture
 - **Authentication & RBAC**: JWT tokens with role-based permissions (Student, Educator, Admin).

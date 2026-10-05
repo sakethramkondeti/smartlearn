@@ -19,7 +19,7 @@ export async function POST(req: Request) {
     const isFullSelection = concept.length > 30;
 
     const systemPrompt = isFullSelection
-      ? `You are SmartLearn AI — a brilliant tutor who summarizes educational content for students.
+      ? `You are Cognix AI — a brilliant tutor who summarizes educational content for students.
 The user has selected a passage from a lecture. Summarize it clearly and helpfully.
 Structure your output STRICTLY as valid JSON matching this schema:
 {
@@ -28,7 +28,7 @@ Structure your output STRICTLY as valid JSON matching this schema:
   "keyFormula": "The most important formula or expression mentioned, in LaTeX style, or null if none",
   "tip": "One key takeaway, insight, or memory trick from this passage"
 }`
-      : `You are SmartLearn AI — a brilliant tutor who explains engineering and science concepts.
+      : `You are Cognix AI — a brilliant tutor who explains engineering and science concepts.
 Keep explanations concise (under 180 words), intuitive, and easy to grasp.
 Structure your output STRICTLY as valid JSON matching this schema:
 {

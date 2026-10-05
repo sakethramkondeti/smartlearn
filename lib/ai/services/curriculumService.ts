@@ -350,7 +350,7 @@ export class CurriculumService {
         ? units.map((u, i) => `Unit ${i + 1}: ${u.title}\nTopics: ${u.subtopics.join(", ")}\nFormulas: ${u.formulas.join(", ")}`).join("\n\n")
         : params.sourceContext?.slice(0, 6000) || "";
 
-      const systemPrompt = `You are SmartLearn AI Course Architect & Knowledge Graph Engineer.
+      const systemPrompt = `You are Cognix AI Course Architect & Knowledge Graph Engineer.
 Analyze the provided course title, student knowledge level, and syllabus material.
 Generate a structured, multi-branching Knowledge Tree (Directed Acyclic Graph - DAG) of 6 to 10 concept nodes matching the EXACT subject.
 

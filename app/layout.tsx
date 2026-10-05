@@ -17,7 +17,7 @@ const monoFont = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SmartLearn — AI-Powered Personalized Adaptive Learning Platform",
+  title: "Cognix — AI-Powered Personalized Adaptive Learning Platform",
   description:
     "Tell us what you want to learn. We'll tell you what to learn next. Dynamic roadmaps, Socratic AI tutoring, Bayesian knowledge tracing, and spaced repetition.",
 };

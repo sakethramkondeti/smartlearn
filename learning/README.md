@@ -1,4 +1,4 @@
-# Learning Content & Knowledge Graphs — SmartLearn
+# Learning Content & Knowledge Graphs — Cognix
 
 Contains curricula definitions, concept dependency DAGs (Directed Acyclic Graphs), lesson blueprints, and IRT-calibrated problem sets.
 

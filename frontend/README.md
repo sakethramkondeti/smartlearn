@@ -1,6 +1,6 @@
-# Frontend — SmartLearn Client
+# Frontend — Cognix Client
 
-The frontend interface for **SmartLearn**, providing a learner dashboard, concept mastery visualization, interactive lesson runner, and real-time Socratic AI tutor chat.
+The frontend interface for **Cognix**, providing a learner dashboard, concept mastery visualization, interactive lesson runner, and real-time Socratic AI tutor chat.
 
 ## Key Features
 - 📊 **Dynamic Knowledge Graph Visualizer**: Real-time representation of concept mastery states.

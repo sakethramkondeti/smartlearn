@@ -21,7 +21,9 @@ export const SidebarProvider: React.FC<{ children: React.ReactNode }> = ({
 
   useEffect(() => {
     try {
-      const saved = localStorage.getItem("smartlearn_sidebar_collapsed");
+      const saved =
+        localStorage.getItem("cognix_sidebar_collapsed") ??
+        localStorage.getItem("smartlearn_sidebar_collapsed");
       if (saved !== null) {
         setIsCollapsed(saved === "true");
       }
@@ -32,7 +34,7 @@ export const SidebarProvider: React.FC<{ children: React.ReactNode }> = ({
     setIsCollapsed((prev) => {
       const next = !prev;
       try {
-        localStorage.setItem("smartlearn_sidebar_collapsed", String(next));
+        localStorage.setItem("cognix_sidebar_collapsed", String(next));
       } catch {}
       return next;
     });
@@ -41,7 +43,7 @@ export const SidebarProvider: React.FC<{ children: React.ReactNode }> = ({
   const setCollapsed = (collapsed: boolean) => {
     setIsCollapsed(collapsed);
     try {
-      localStorage.setItem("smartlearn_sidebar_collapsed", String(collapsed));
+      localStorage.setItem("cognix_sidebar_collapsed", String(collapsed));
     } catch {}
   };
 

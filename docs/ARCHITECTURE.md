@@ -1,4 +1,4 @@
-# SmartLearn System Architecture & Technical Design
+# Cognix System Architecture & Technical Design
 
 ## 1. High-Level Data Flow
 

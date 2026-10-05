@@ -3,7 +3,7 @@ import path from "path";
 import Groq from "groq-sdk";
 
 /**
- * Universal AI client for SmartLearn using official Groq SDK.
+ * Universal AI client for Cognix using official Groq SDK.
  */
 
 // Helper to ensure env variables from .env.local are accessible

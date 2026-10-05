@@ -25,7 +25,7 @@ export const GlobalAIAssistant: React.FC = () => {
     {
       id: "m-1",
       sender: "ai",
-      text: "Hello. I am your SmartLearn AI Assistant.\n\nAsk any question regarding concepts, formulas, code, derivations, or course schedules.",
+      text: "Hello. I am your Cognix AI Assistant.\n\nAsk any question regarding concepts, formulas, code, derivations, or course schedules.",
       timestamp: "Just now",
     },
   ]);
@@ -61,7 +61,7 @@ export const GlobalAIAssistant: React.FC = () => {
     setIsTyping(true);
 
     const userContext = `Learner: ${mockUserProfile.name}
-Role: Active Student on SmartLearn Platform
+Role: Active Student on Cognix Platform
 Goal: Systematic topic mastery, algorithmic derivations, and technical skill development.`;
 
     try {
@@ -127,7 +127,7 @@ Goal: Systematic topic mastery, algorithmic derivations, and technical skill dev
               </div>
               <div>
                 <h3 className="text-xs font-semibold text-zinc-900">
-                  SmartLearn AI Assistant
+                  Cognix AI Assistant
                 </h3>
                 <p className="text-[10px] font-mono text-zinc-500">
                   Curriculum & Concept Tutor

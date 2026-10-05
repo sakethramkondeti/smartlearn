@@ -11,7 +11,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Course title is required" }, { status: 400 });
     }
 
-    const systemPrompt = `You are SmartLearn AI Course Architect & Knowledge Graph Engineer.
+    const systemPrompt = `You are Cognix AI Course Architect & Knowledge Graph Engineer.
 Given a course topic, student target goals, syllabus materials, and time budget, you decompose the subject into:
 1. A rich, multi-branching Knowledge Tree (Directed Acyclic Graph - DAG) of 6 to 10 foundational Concept Nodes for an interactive flowchart.
 2. A day-wise syllabus split for ${totalDays || 30} days, mapping each day to a concept, specific topics, and estimated duration.
@@ -128,7 +128,7 @@ Generate a domain-accurate, multi-branching tree knowledge graph for this course
         durationMinutes: d.durationMinutes,
         sourceLink: {
           title: `${title} — Day ${d.dayNumber} Materials`,
-          source: sources && sources[0] ? "User Linked Playlist" : "SmartLearn Curated Courseware",
+          source: sources && sources[0] ? "User Linked Playlist" : "Cognix Curated Courseware",
           url: sources && sources[0] ? sources[0] : "https://youtube.com",
           duration: `${d.durationMinutes} mins`,
         },

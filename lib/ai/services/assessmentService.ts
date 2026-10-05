@@ -89,7 +89,7 @@ export class AssessmentService {
     }> = [];
 
     if (provider) {
-      const systemPrompt = `You are SmartLearn AI Assessment Engine.
+      const systemPrompt = `You are Cognix AI Assessment Engine.
 Generate exactly 3 high-quality multiple choice diagnostic questions to test deep comprehension, formulas, and error diagnosis for the specific day's topic.
 Questions must be challenging, technically accurate, and specific to the given subject.
 

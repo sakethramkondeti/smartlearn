@@ -36,7 +36,7 @@ export const Sidebar: React.FC = () => {
         isCollapsed ? "w-14" : "w-56"
       )}
     >
-      {/* Permanent Brand Header: [SL] stays fixed, text slides left */}
+      {/* Permanent Brand Header: [C] stays fixed, text slides left */}
       <div className="h-14 flex items-center px-4 border-b border-zinc-200 shrink-0 overflow-hidden">
         <button
           onClick={toggleSidebar}
@@ -45,10 +45,10 @@ export const Sidebar: React.FC = () => {
         >
           {/* Permanent Single Logo */}
           <div className="w-6 h-6 rounded-sm bg-zinc-900 group-hover:bg-zinc-800 flex items-center justify-center text-white font-bold text-xs shadow-2xs shrink-0 transition-colors">
-            SL
+            C
           </div>
 
-          {/* Smooth sliding & fading SmartLearn text */}
+          {/* Smooth sliding & fading Cognix text */}
           <span
             className={cn(
               "font-semibold text-sm tracking-tight text-zinc-900 transition-all duration-300 ease-in-out whitespace-nowrap overflow-hidden",
@@ -57,7 +57,7 @@ export const Sidebar: React.FC = () => {
                 : "w-auto opacity-100 translate-x-0"
             )}
           >
-            SmartLearn
+            Cognix
           </span>
         </button>
       </div>

@@ -1,6 +1,6 @@
-# AI & Adaptive Learning Engine — SmartLearn
+# AI & Adaptive Learning Engine — Cognix
 
-The intelligence layer for **SmartLearn**, powering adaptive knowledge tracing, retrieval-augmented generation (RAG) for curriculum grounding, and real-time Socratic AI tutoring.
+The intelligence layer for **Cognix**, powering adaptive knowledge tracing, retrieval-augmented generation (RAG) for curriculum grounding, and real-time Socratic AI tutoring.
 
 ## Components
 1. **Knowledge Tracing (`models/`)**:

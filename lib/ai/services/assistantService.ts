@@ -2,10 +2,10 @@ import { getAIProvider } from "../provider";
 import { prisma } from "@/lib/db";
 
 /**
- * Model 6: Personal Smart Learn Assistant Service
+ * Model 6: Personal Cognix Assistant Service
  *
  * Responsibilities:
- * - Ingest the student's complete Smart Learn telemetry from Prisma database
+ * - Ingest the student's complete Cognix telemetry from Prisma database
  * - Read current courses, streak, progress, and recent mistake logs
  * - Deliver encouraging, pedagogically sharp tutoring and guidance
  */
@@ -61,7 +61,7 @@ Recent Diagnostic Weak Areas: ${user?.mistakeLogs.map((m) => `${m.conceptId}: ${
     const provider = getAIProvider();
 
     if (provider) {
-      const systemPrompt = `You are SmartLearn AI, an intelligent personal learning tutor.
+      const systemPrompt = `You are Cognix AI, an intelligent personal learning tutor.
 You have complete access to the student's database telemetry, learning streaks, and mistake diagnostics.
 Be concise (1-3 paragraphs), pedagogical, and encouraging.
 Format all mathematical formulas using clean standard notation or LaTeX.`;

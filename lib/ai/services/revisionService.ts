@@ -58,7 +58,7 @@ export class RevisionService {
     let generated: RevisionCardData | null = null;
 
     if (provider) {
-      const systemPrompt = `You are SmartLearn AI Revision Engine.
+      const systemPrompt = `You are Cognix AI Revision Engine.
 Generate a concise, 5-minute active recall revision card.
 Return strictly valid JSON matching:
 {
